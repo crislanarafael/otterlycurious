@@ -5,6 +5,7 @@
     <title>Otterly Curious</title>
     <style>
       
+      /* For tablets */
       @media only screen 
       and (min-device-width: 834px) 
       and (max-device-width: 1112px)
@@ -21,6 +22,7 @@
       
       
       /* ----------- Non-Retina Screens ----------- */
+      /* -For Laptops */
       @media screen 
       and (min-device-width: 1200px) 
       and (max-device-width: 1600px) 
@@ -36,6 +38,7 @@
       }
 
       /* ----------- Retina Screens ----------- */
+      /* -For Laptops */
       @media screen 
       and (min-device-width: 1200px) 
       and (max-device-width: 1600px) 
@@ -48,6 +51,26 @@
           -o-background-size: cover;
           background-size: cover;
         }
+      }
+      
+      /* Portrait */
+      /* For Mobile Devices */
+      @media screen 
+      and (device-width: 360px) 
+      and (device-height: 640px) 
+      and (-webkit-device-pixel-ratio: 4) 
+      and (orientation: portrait) {
+
+      }
+
+      /* Landscape */
+      /* For Mobile Devices */
+      @media screen 
+      and (device-width: 360px) 
+      and (device-height: 640px) 
+      and (-webkit-device-pixel-ratio: 4) 
+      and (orientation: landscape) {
+
       }
       
       
