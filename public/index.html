@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Otterly Curious</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
     <style>
       
       /* For tablets */
@@ -17,9 +18,11 @@
           -o-background-size: cover;
           background-size: cover;
         }
-      
+        .title{
+          color: white;
+          font-family: 'Mountains of Christmas', cursive;
+        }
       }
-      
       
       /* ----------- Non-Retina Screens ----------- */
       /* -For Laptops */
@@ -27,13 +30,16 @@
       and (min-device-width: 1200px) 
       and (max-device-width: 1600px) 
       and (-webkit-min-device-pixel-ratio: 1) { 
-        body{
-          
+        body{  
           background: url(otter.jpg) no-repeat center center fixed; 
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
           background-size: cover;
+        }
+        .title{
+          color: white;
+          font-family: 'Mountains of Christmas', cursive;
         }
       }
 
@@ -51,6 +57,11 @@
           -o-background-size: cover;
           background-size: cover;
         }
+        
+        .title{
+          color: white;
+          font-family: 'Mountains of Christmas', cursive;
+        }
       }
       
       /* Portrait */
@@ -58,7 +69,6 @@
       @media screen 
       and (max-device-width: 360px) 
       and (max-device-height: 640px) 
-      
       and (orientation: portrait) {
           body{
           background: url(waves_mobile.jpg); 
@@ -67,6 +77,10 @@
           background-width: 100 vw;
           background-height: 100 vh;
         }
+        .title{
+          color: white;
+          font-family: 'Mountains of Christmas', cursive;
+        }
       }
 
       /* Landscape */
@@ -74,7 +88,6 @@
       @media screen 
       and (max-device-width: 360px) 
       and (max-device-height: 640px) 
-      
       and (orientation: landscape) {
         body{
           background: url(waves_mobile.jpg); 
@@ -83,7 +96,10 @@
           background-width: 100 vw;
           background-height: 100 vh;
         }
-
+        .title{
+          color: white;
+          font-family: 'Mountains of Christmas', cursive;
+        }
       }
       
       
@@ -92,7 +108,7 @@
   </head>
   <body>
    
-    <h1>Hello World! Time to take over the world!</h1>
+    <h1 class="title">Otterly Curious</h1>
     
   </body>
 </html>
