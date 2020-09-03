@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Otterly Curious</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap" rel="stylesheet">
+    <style>
+      
+      /* For tablets */
+      @media only screen 
+      and (min-device-width: 834px) 
+      and (max-device-width: 1112px)
+      and (-webkit-min-device-pixel-ratio: 2) {
+        body{
+          background: url(otter_tablet.png) no-repeat center center fixed; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+        .title{
+          color: white;
+          font-family: 'Mountains of Christmas', cursive;
+          font-size: 4.5rem;
+          margin: 0;
+          text-align: center;
+          
+        }
+        .subtitle{
+          color: white;
+          font-family: 'Signika', sans-serif;
+          font-size: 16px;
+          text-align: center;
+        }
+        #content {
+          width: 45vw;
+          height: 75vh;
+          max-height: 75vh;
+          background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+          background: rgba(204, 204, 204, 0.5);
+          border-radius: 10px;
+          overflow-y:auto;
+          
+        }
+        .maincontent{
+          padding: 10px;
+          color: white;
+          font-family: 'Signika', sans-serif;
+          margin-bottom: 0px;
+        }
+        .items{
+          padding: 10px;
+          color: white;
+          font-family: 'Signika', sans-serif;
+          margin-bottom: 0px;
+          margin-top: 0px;
+        }
+        .separotter{
+          background: url(otter_white_hr.png) no-repeat top center;
+          background-size: contain;
+          display: block;
+          height: 20px;
+          border: 0;
+          position: relative;
+          margin: 0;
+          }
+         .separotter::before,
+         .separotter::after {
+           content: '';
+           display: block;
+           position: absolute;
+           background: #d7d7d7;
+           height: 2px;
+           top: 8px;
+        }
+         
+        .separotter::before {
+           left: 0;
+           right: 50%;
+           margin-right: 10px;
+           margin-left: 10px;
+           margin-top: 0px;
+           margin-bottom: 0px;
+          }
+        
+        .separotter::after{
+          right: 0;
+          left: 50%;
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          }
+        .bloglinks:hover{
+            color: #F7E98F;
+          }
+        .bloglinks{
+            text-decoration: none;
+            color: white;
+         }
+       
+      }
+      
+      /* ----------- Non-Retina Screens ----------- */
+      /* -For Laptops */
+      @media screen 
+      and (min-device-width: 1200px) 
+      and (max-device-width: 1600px) 
+      and (-webkit-min-device-pixel-ratio: 1) { 
+        body{  
+          background: url(otter.jpg) no-repeat center center fixed; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+        .title{
+          color: white;
+          font-family: 'Mountains of Christmas', cursive;
+          font-size: 4.5rem;
+          margin: 0;
+        }
+        .subtitle{
+          color: white;
+          font-family: 'Signika', sans-serif;
+          font-size: 16px;
+          margin: 0px 0px 10px 0px;
+        }
+        #content {
+          width: 45vw;
+          height: 75vh;
+          max-height: 75vh;
+          background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+          background: rgba(204, 204, 204, 0.5);
+          border-radius: 10px;
+          overflow-y:auto;
+        }
+        .maincontent{
+          padding: 10px;
+          color: white;
+          font-family: 'Signika', sans-serif;
+          margin-bottom: 0px;
+        }
+        .items{
+          padding: 10px;
+          color: white;
+          font-family: 'Signika', sans-serif;
+          margin-bottom: 0px;
+          margin-top: 0px;
+        }
+        .separotter{
+          background: url(otter_white_hr.png) no-repeat top center;
+          background-size: contain;
+          display: block;
+          height: 20px;
+          border: 0;
+          position: relative;
+          margin: 0;
+          }
+         .separotter::before,
+         .separotter::after {
+           content: '';
+           display: block;
+           position: absolute;
+           background: #d7d7d7;
+           height: 2px;
+           top: 8px;
+        }
+         
+        .separotter::before {
+           left: 0;
+           right: 50%;
+           margin-right: 10px;
+           margin-left: 10px;
+           margin-top: 0px;
+           margin-bottom: 0px;
+          }
+        
+        .separotter::after{
+          right: 0;
+          left: 50%;
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          }
+        .bloglinks:hover{
+            color: #F7E98F;
+          }
+        .bloglinks{
+            text-decoration: none;
+            color: white;
+         }
+       
+      }
+
+      /* ----------- Retina Screens ----------- */
+      /* -For Laptops */
+      @media screen 
+      and (min-device-width: 1200px) 
+      and (max-device-width: 1600px) 
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (min-resolution: 192dpi) { 
+        body{
+          background: url(otter.jpg) no-repeat center center fixed; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+        
+        .title{
+          color: white;
+          font-family: 'Mountains of Christmas', cursive;
+          font-size: 4.5rem;
+          margin: 0;
+        }
+        .subtitle{
+          color: white;
+          font-family: 'Signika', sans-serif;
+          font-size: 16px;
+          
+        }
+        #content {
+          width: 45vw;
+          height: 75vh;
+          max-height: 75vh;
+          background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+          background: rgba(204, 204, 204, 0.5);
+          border-radius: 10px;
+          overflow-y:auto;
+        }
+        .maincontent{
+          padding: 10px;
+          color: white;
+          font-family: 'Signika', sans-serif;
+          margin-bottom: 0px;
+        }
+        .items{
+          padding: 10px;
+          color: white;
+          font-family: 'Signika', sans-serif;
+          margin-bottom: 0px;
+          margin-top: 0px;
+        }
+        .separotter{
+          background: url(otter_white_hr.png) no-repeat top center;
+          background-size: contain;
+          display: block;
+          height: 20px;
+          border: 0;
+          position: relative;
+          margin: 0;
+          }
+         .separotter::before,
+         .separotter::after {
+           content: '';
+           display: block;
+           position: absolute;
+           background: #d7d7d7;
+           height: 2px;
+           top: 8px;
+        }
+         
+        .separotter::before {
+           left: 0;
+           right: 50%;
+           margin-right: 10px;
+           margin-left: 10px;
+           margin-top: 0px;
+           margin-bottom: 0px;
+          }
+        
+        .separotter::after{
+          right: 0;
+          left: 50%;
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          }
+        .bloglinks:hover{
+            color: #F7E98F;
+          }
+        .bloglinks{
+            text-decoration: none;
+            color: white;
+         }
+        
+      }
+      
+      /* Portrait */
+      /* For Mobile Devices */
+      @media screen 
+      and (max-device-width: 360px) 
+      and (max-device-height: 640px) 
+      and (orientation: portrait) {
+          body{
+          background: url(seaotter_mobile2.jpg); 
+          background-repeat: no-repeat;
+          background-position: 75% 20%;
+          background-width: 100 vw;
+          background-height: 100 vh;
+        }
+        .title{
+          color: white;
+          font-family: 'Mountains of Christmas', cursive;
+          font-size: 3rem;
+          margin: 0;
+          text-align: center;
+        }
+        .subtitle{
+          color: white;
+          font-family: 'Signika', sans-serif;
+          font-size: 16px;
+          text-align: center;
+        }
+        #content {
+          width: 95vw;
+          height: 75vh;
+          max-height: 75vh;
+          background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+          background: rgba(204, 204, 204, 0.5);
+          border-radius: 10px;
+          overflow-y:auto;
+        }
+        .maincontent{
+          padding: 10px;
+          color: white;
+          font-family: 'Signika', sans-serif;
+          margin-bottom: 0px;
+        }
+        .items{
+          padding: 10px;
+          color: white;
+          font-family: 'Signika', sans-serif;
+          margin-bottom: 0px;
+          margin-top: 0px;
+        }
+        .separotter{
+          background: url(otter_white_hr.png) no-repeat top center;
+          background-size: contain;
+          display: block;
+          height: 20px;
+          border: 0;
+          position: relative;
+          margin: 0;
+          }
+         .separotter::before,
+         .separotter::after {
+           content: '';
+           display: block;
+           position: absolute;
+           background: #d7d7d7;
+           height: 2px;
+           top: 8px;
+        }
+         
+        .separotter::before {
+           left: 0;
+           right: 50%;
+           margin-right: 10px;
+           margin-left: 10px;
+           margin-top: 0px;
+           margin-bottom: 0px;
+          }
+        
+        .separotter::after{
+          right: 0;
+          left: 50%;
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          }
+        .bloglinks{
+            text-decoration: none;
+            color: white;
+         }
+        .bloglinks:hover{
+            color: #F7E98F;
+          }
+      }
+
+      /* Landscape */
+      /* For Mobile Devices */
+      @media screen 
+      and (max-device-width: 640px) 
+      and (max-device-height: 360px) 
+      and (orientation: landscape) {
+        body{
+          background: url(seaotter_mobile2.jpg); 
+          background-repeat: no-repeat;
+          background-position: 75% 20%;
+          background-width: 100 vw;
+          background-height: 100 vh;
+        }
+        .title{
+          color: white;
+          font-family: 'Mountains of Christmas', cursive;
+          font-size: 3rem;
+          margin: 0;
+          text-align: center;
+        }
+        .subtitle{
+          color: white;
+          font-family: 'Signika', sans-serif;
+          font-size: 16px;
+          text-align: center;
+        }
+        #content {
+          width: 95vw;
+          height: 75vh;
+          max-height: 75vh;
+          background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+          background: rgba(204, 204, 204, 0.5);
+          border-radius: 10px;
+          overflow-y:auto;
+        }
+        .maincontent{
+          padding: 10px;
+          color: white;
+          font-family: 'Signika', sans-serif;
+          margin-bottom: 0px;
+        }
+        .items{
+          padding: 10px;
+          color: white;
+          font-family: 'Signika', sans-serif;
+          margin-bottom: 0px;
+          margin-top: 0px;
+        }
+        .separotter{
+          background: url(otter_white_hr.png) no-repeat top center;
+          background-size: contain;
+          display: block;
+          height: 20px;
+          border: 0;
+          position: relative;
+          margin: 0;
+          }
+         .separotter::before,
+         .separotter::after {
+           content: '';
+           display: block;
+           position: absolute;
+           background: #d7d7d7;
+           height: 2px;
+           top: 8px;
+        }
+         
+        .separotter::before {
+           left: 0;
+           right: 50%;
+           margin-right: 10px;
+           margin-left: 10px;
+           margin-top: 0px;
+           margin-bottom: 0px;
+          }
+        
+        .separotter::after{
+          right: 0;
+          left: 50%;
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          }
+        .bloglinks{
+            text-decoration: none;
+            color: white;
+         }
+        .bloglinks:hover{
+            color: #F7E98F;
+          }
+        
+      }
+      
+      /* For Mobile Devices - Samsung Galaxy S9+ TEST */
+      @media only screen and (max-width: 600px) and (orientation: portrait){
+        body{
+          background: url(seaotter_mobile2.jpg); 
+          background-repeat: no-repeat;
+          background-position: 75% 20%;
+          background-width: 100 vw;
+          background-height: 100 vh;
+        }
+        .title{
+          color: white;
+          font-family: 'Mountains of Christmas', cursive;
+          font-size: 3rem;
+          margin: 0;
+          text-align: center;
+        }
+        .subtitle{
+          color: white;
+          font-family: 'Signika', sans-serif;
+          font-size: 16px;
+          text-align: center;
+        }
+        #content {
+          width: 95vw;
+          height: 75vh;
+          max-height: 75vh;
+          background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+          background: rgba(204, 204, 204, 0.5);
+          border-radius: 10px;
+          overflow-y:auto;
+        }
+        .maincontent{
+          padding: 10px;
+          color: white;
+          font-family: 'Signika', sans-serif;
+          margin-bottom: 0px;
+        }
+        .items{
+          padding: 10px;
+          color: white;
+          font-family: 'Signika', sans-serif;
+          margin-bottom: 0px;
+          margin-top: 0px;
+        }
+        .separotter{
+          background: url(otter_white_hr.png) no-repeat top center;
+          background-size: contain;
+          display: block;
+          height: 20px;
+          border: 0;
+          position: relative;
+          margin: 0;
+          }
+         .separotter::before,
+         .separotter::after {
+           content: '';
+           display: block;
+           position: absolute;
+           background: #d7d7d7;
+           height: 2px;
+           top: 8px;
+        }
+         
+        .separotter::before {
+           left: 0;
+           right: 50%;
+           margin-right: 10px;
+           margin-left: 10px;
+           margin-top: 0px;
+           margin-bottom: 0px;
+          }
+        
+        .separotter::after{
+          right: 0;
+          left: 50%;
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          }
+          .bloglinks{
+            text-decoration: none;
+            color: white;
+         }
+        
+          .bloglinks:hover{
+            color: #F7E98F;
+          }
+        }
+        
+      
+      
+    </style>
+  </head>
+  <body>
+   
+    <h1 class="title">Otterly Curious</h1>
+    <h3 class="subtitle">My name is Crislana. I like making things. I'm Otterly Curious.</h3>
+    
+    <div id="content"> 
+      <h4 class="maincontent">After a fair bit of time planning as well as going back and forth on design and layout choices and web hosting I'm proud to launch my personal blog this September!
+                              <br><br>There are so many choices for blogging platforms such as Wordpress being the most popular platform but I've decided to create
+                              the whole thing using pure HTML and CSS only. I'll be making sure to add some javascript that I've picked up recently wherever I see fit.<br><br>
+                              Why HTML/CSS you say? I have a few reasons. A big one is to help keep me practicing coding everyday, another one is honestly to have
+                              complete freedom on how I want to design my page, and what mistakes/time I'll need to take to get there. Just yesterday I was formatting
+                              a personalized divider (with an otter on it obviously) and it took me some time to figure it out thanks to stackoverflow!
+                              <br>On here you can find my personal projects, progress, things I find interesting that I want to archive for later and share with you, and of course
+                              thoughts. As a student, aspiring software engineer, and pilot, I'm dedicating this place towards tracking my progress in what I want to achieve.
+                              Thanks for reading!</h4>
+  
+      </div>
+    </div>
+    
+  </body>
+</html>
