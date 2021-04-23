@@ -1,13 +1,9 @@
 /* ----------- Non-Retina Screens ----------- */
       /* -For Laptops */
       /* Test for my current HP Spectre Laptop */
-      @media screen
-      and (min-device-width: 1200px)
-      and (max-device-width: 1707px)
-      and (min-device-height: 960px)
-      and (-webkit-min-device-pixel-ratio: 1) {
+     
         body{
-          background: url(otter.jpg) no-repeat center center fixed;
+          background: url(../otter.jpg) no-repeat center center fixed;
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
@@ -48,7 +44,7 @@
           margin-top: 0px;
         }
         .separotter{
-          background: url(otter_white_hr.png) no-repeat top center;
+          background: url(../otter_white_hr.png) no-repeat top center;
           background-size: contain;
           display: block;
           height: 20px;
@@ -90,4 +86,4 @@
             text-decoration: none;
             color: white;
          }
-       }
+       
